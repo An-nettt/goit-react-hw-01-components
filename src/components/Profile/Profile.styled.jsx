@@ -2,9 +2,8 @@ import styled from 'styled-components';
 
 export const Card = styled.div`
   width: 250px;
-  height: 300px;
-  margin: 40px auto 40px;
-  padding: 40px 15px 20px 15px;
+  height: auto;
+  margin: 40px auto 0;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
   border-radius: 5px;
@@ -17,6 +16,7 @@ export const Photo = styled.img`
   width: 100px;
   height: 100px;
   margin: 0 auto;
+  padding-top: 40px;
   border-radius: 50%;
 `;
 
@@ -25,6 +25,7 @@ export const UserName = styled.p`
   margin-bottom: 12px;
   font-size: 17px;
   font-weight: 700;
+  margin-bottom: 0;
 `;
 
 export const UserInfo = styled.p`
@@ -37,17 +38,26 @@ export const UserInfo = styled.p`
 
 export const Stats = styled.ul`
   display: flex;
-  justify-content: space-around;
   padding: 0;
+  margin: 0;
   list-style: none;
-  background-color: #dcdcdc;
+  background-color: #f0f0f0;
+  border-top-width: 1px;
+  border-top-style: solid;
+  border-top-color: #b4b4b4;
 `;
 
 export const StatsItem = styled.li`
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 10px 0;
+  padding: 5px 0 5px;
+  flex-basis: calc(100% / 3);
+  :nth-child(-n + 2) {
+    border-right-width: 1px;
+    border-right-style: solid;
+    border-right-color: #b4b4b4;
+  }
 `;
 
 export const Label = styled.span`

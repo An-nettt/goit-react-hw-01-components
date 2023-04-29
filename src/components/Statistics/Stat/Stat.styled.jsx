@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 export const Container = styled.section`
   width: 400px;
-  height: 200px;
+  height: 150px;
   margin: 40px auto 40px;
   padding: 40px 15px 20px 15px;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.12),
@@ -13,24 +13,28 @@ export const Container = styled.section`
 export const Title = styled.h2`
   display: flex;
   justify-content: center;
-  margin: 0;
+  margin: 20px 0;
+  text-transform: uppercase;
+  color: #686868;
+  font-size: 20px;
+  font-weight: 500;
 `;
 
 export const StatList = styled.ul`
   display: flex;
-  width: 100px;
-  height: 100px;
-  margin: 0 auto;
+  justify-content: center;
+  padding: 0;
 `;
 
-// export const UserName = styled.p`
-//   text-align: center;
-//   margin-bottom: 12px;
-//   font-size: 17px;
-//   font-weight: 700;
-// `;
+export const Item = styled.li`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px 0;
+  flex-basis: calc((100% - 30px) / 4);
+`;
 
-// export const UserInfo = styled.p`
+// export const Label = styled.span`
 //   text-align: center;
 //   margin-bottom: 30px;
 //   font-size: 14px;
@@ -53,13 +57,14 @@ export const StatList = styled.ul`
 //   margin: 10px 0;
 // `;
 
-// export const Label = styled.span`
-//   font-size: 12px;
-//   color: #686868;
-//   padding: 5px;
-// `;
+export const Label = styled.span`
+  font-size: 10px;
+  color: #686868;
+  padding: 5px;
+  margin-bottom: 10px;
+`;
 
-// export const Quantity = styled.span`
-//   font-size: 13px;
-//   font-weight: 500;
-// `;
+export const Percentage = styled.span`
+  font-size: 18px;
+  font-weight: 500;
+`;
