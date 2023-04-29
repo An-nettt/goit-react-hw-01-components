@@ -22,15 +22,15 @@ export const Photo = styled.img`
 
 export const UserName = styled.p`
   text-align: center;
-  margin-bottom: 12px;
+  margin-bottom: 20px;
   font-size: 17px;
   font-weight: 700;
-  margin-bottom: 0;
+  margin-bottom: 10px;
 `;
 
 export const UserInfo = styled.p`
   text-align: center;
-  margin-bottom: 30px;
+  margin: 5px 0 0;
   font-size: 14px;
   font-weight: 500;
   color: #a0a0a0;
@@ -39,7 +39,7 @@ export const UserInfo = styled.p`
 export const Stats = styled.ul`
   display: flex;
   padding: 0;
-  margin: 0;
+  margin: 15px 0 0;
   list-style: none;
   background-color: #f0f0f0;
   border-top-width: 1px;
@@ -51,7 +51,7 @@ export const StatsItem = styled.li`
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 5px 0 5px;
+  padding: 5px 0 10px;
   flex-basis: calc(100% / 3);
   :nth-child(-n + 2) {
     border-right-width: 1px;
