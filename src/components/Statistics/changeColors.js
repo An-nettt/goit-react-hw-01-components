@@ -1,4 +1,4 @@
-function changeColors() {
+export function changeColors() {
   const changeColor = document.querySelectorAll('li');
   changeColor.style.backgroundColor = getRandomHexColor();
 }
@@ -8,5 +8,3 @@ function getRandomHexColor() {
     .toString(16)
     .padStart(6, 0)}`;
 }
-
-changeColors();

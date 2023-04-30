@@ -1,5 +1,6 @@
 import PropTypes from 'prop-types';
 import { Item, Label, Percentage } from './Stat.styled';
+// import { changeColors } from '../changeColors';
 
 export const Stat = ({ label, percentage }) => {
   return (
@@ -14,3 +15,5 @@ Stat.propTypes = {
   label: PropTypes.string.isRequired,
   percentage: PropTypes.number.isRequired,
 };
+
+// changeColors();

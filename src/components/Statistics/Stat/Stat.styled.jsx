@@ -25,6 +25,7 @@ export const StatList = styled.ul`
   justify-content: center;
   padding: 0;
   margin: 0;
+  list-style: none;
 `;
 
 export const Item = styled.li`
