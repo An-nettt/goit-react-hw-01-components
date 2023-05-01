@@ -1,10 +1,11 @@
 import styled from 'styled-components';
+import { getRandomHexColor } from '../changeColors';
 
 export const Container = styled.section`
   width: 400px;
   height: auto;
   margin: 40px auto 0;
-  padding: 40px 15px 0 15px;
+  padding: 15px;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.12),
     0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
   border-radius: 5px;
@@ -13,7 +14,7 @@ export const Container = styled.section`
 export const Title = styled.h2`
   display: flex;
   justify-content: center;
-  margin: 20px 0;
+  margin: 40px 0;
   text-transform: uppercase;
   color: #686868;
   font-size: 20px;
@@ -35,6 +36,12 @@ export const Item = styled.li`
   margin: 0;
   padding: 5px 0 15px;
   flex-basis: calc((100% - 30px) / 4);
+  background-color: ${props => {
+    switch (props) {
+      default:
+        return getRandomHexColor();
+    }
+  }};
 `;
 
 export const Label = styled.span`
