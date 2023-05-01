@@ -1,12 +1,12 @@
 import PropTypes from 'prop-types';
-import { Item, Type, Amount, Currency } from '../TransactionHistory.styled';
+import { Item, TableData } from '../TransactionHistory.styled';
 
 export const Transaction = ({ type, amount, currency }) => {
   return (
     <Item>
-      <Type>{type}</Type>
-      <Amount>{amount}</Amount>
-      <Currency>{currency}</Currency>
+      <TableData>{type}</TableData>
+      <TableData>{amount}</TableData>
+      <TableData>{currency}</TableData>
     </Item>
   );
 };
