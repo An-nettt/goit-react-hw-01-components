@@ -1,12 +1,12 @@
 import PropTypes from 'prop-types';
 import { Stat } from './Stat/Stat';
 import { Container, StatList } from './Stat/Stat.styled';
-import { TitleMarkUp } from './Title';
+// import { TitleMarkUp } from './Title';
 
 export const Statistics = ({ stats }) => {
   return (
     <Container>
-      <TitleMarkUp title={stats.title} />
+      {/* <TitleMarkUp title={stats.title} /> */}
       <StatList>
         {stats.map(({ id, label, percentage }) => (
           <Stat key={id} label={label} percentage={percentage} />
