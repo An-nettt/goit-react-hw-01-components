@@ -6,7 +6,7 @@ import { TitleMarkUp } from './Title';
 export const Statistics = ({ stats }) => {
   return (
     <Container>
-      <TitleMarkUp title="Upload stats" />
+      <TitleMarkUp title={stats.title} />
       <StatList>
         {stats.map(({ id, label, percentage }) => (
           <Stat key={id} label={label} percentage={percentage} />
