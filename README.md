@@ -65,16 +65,6 @@ https://textbook.edu.goit.global/lms-react-homework/v1/uk/img/hw-01/social-profi
   </ul>
 </div>
 
-Приклад використання import user from 'path/to/user.json;
-
-<Profile
-  username={user.username}
-  tag={user.tag}
-  location={user.location}
-  avatar={user.avatar}
-  stats={user.stats}
-/>
-
 <h2>2- Секція статистики</h2>
 
 Створити компонент <Statistics>, який би відображав статистику з переданих
@@ -120,11 +110,6 @@ stats – масив об'єктів, що містять інформацію �
   </ul>
 </section>
 
-Приклад використання
-
-import data from '/path/to/data.json';
-<Statistics title="Upload stats" stats={data} /> <Statistics stats={data} />
-
 <h2>3 - Список друзів</h2>
 
 Необхідно створити компонент <FriendList>, за допомогою якого ми могли б
@@ -157,11 +142,6 @@ Styled Components.
   <img class="avatar" src="" alt="User avatar" width="48" />
   <p class="name"></p>
 </li>
-
-<h4>Приклад використання </h4>
-import friends from 'path/to/friends.json';
-
-<FriendList friends={friends} />;
 
 <h2>4 - Історія транзакцій</h2>
 
@@ -204,8 +184,3 @@ transactions.json. Компонент створює розмітку табли
     </tr>
   </tbody>
 </table>
-
-<h4>Приклад використання </h4>
-
-import transactions from 'path/to/transactions.json';
-<TransactionHistory items={transactions} />;
