@@ -126,7 +126,7 @@ https://textbook.edu.goit.global/lms-react-homework/v1/uk/img/hw-01/transactions
 </ul>
 ```
 
-<h4>Опис компонента <FriendListItem></h4>
+<h4>Опис компонента `<FriendListItem>`</h4>
 
 Компонент повинен приймати кілька пропів:
 
